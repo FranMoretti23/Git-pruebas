@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: url(https://static1.hotcarsimages.com/wordpress/wp-content/uploads/2020/06/Formula-1-start.jpg?q=50&fit=crop&w=750&dpr=1.5-1-start.avif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    width: 100%;
+    margin: auto;
+    padding:0;
+    background-color: rgb(207, 71, 71);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 130px;
+    cursor: pointer;
+}
+
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: large;
+}
+.navbar ul li::before {
+    content: "";
+    height: 3px;
+    width: 0%;
+    background: black;
+    position: absolute;
+    left: 0;
+    bottom: -12px;
+    transition: 0.8s ease-out;
+}
+.navbar ul li:hover::before {
+    width: 100%;
+}
