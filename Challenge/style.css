@@ -60,15 +60,16 @@ body {
 }
 
 .main {
-    width: 40%;
-    height: 30%;
+    width: 80%;
+    height: 70%;
 }
 
 #content{
     display: flex;
-    flex-direction: column;
-    width: 40%;
-    height: 30%;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    background-color: #000;
 
 }
 .article {
@@ -100,4 +101,5 @@ body {
     border-radius: .25rem;
     min-width: 200px;
     text-decoration: none;
+    margin: 10px;
 }
